@@ -1,3 +1,5 @@
+# https://www.codewars.com/kata/54b724efac3d5402db00065e
+
 # In this kata you have to write a simple Morse code decoder. While the Morse code is now mostly superceded by voice and digital data communication channels, it still has its use in some applications around the world.
 # The Morse code encodes every character as a sequence of "dots" and "dashes". For example, the letter A is coded as ·−, letter Q is coded as −−·−, and digit 1 is coded as ·−−−−. The Morse code is case-insensitive, traditionally capital letters are used. When the message is written in Morse code, a single space is used to separate the character codes and 3 spaces are used to separate words. For example, the message HEY JUDE in Morse code is ···· · −·−−   ·−−− ··− −·· ·.
 
@@ -18,14 +20,14 @@
 # All the test strings would contain valid Morse code, so you may skip checking for errors and exceptions. In C#, tests will fail if the solution code throws an exception, please keep that in mind. This is mostly because otherwise the engine would simply ignore the tests, resulting in a "valid" solution.
 
 def decodeMorse(morseCode):
-    words = morseCode.split('   ')
-    print words
-    newSentence = []
-    for x in words:
-        list_of_letters = x.split()
-        for pos, ltr in enumerate(list_of_letters):
-            list_of_letters[pos] = MORSE_CODE[ltr]
-        newSentence.append(''.join(list_of_letters))
-    while '' in newSentence:
-        newSentence.remove('')
-    return ' '.join(newSentence)
+  words = morseCode.split('   ')
+  print words
+  newSentence = []
+  for x in words:
+    list_of_letters = x.split()
+    for pos, ltr in enumerate(list_of_letters):
+      list_of_letters[pos] = MORSE_CODE[ltr]
+    newSentence.append(''.join(list_of_letters))
+  while '' in newSentence:
+    newSentence.remove('')
+  return ' '.join(newSentence)
