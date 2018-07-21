@@ -30,6 +30,20 @@
 # If you are given an array with multiple answers, return the lowest correct index.
 # An empty array should be treated like a 0 in this problem.
 
+#
+# first solution
+#
+def find_even_index(arr):
+  idx = 0
+  for x in arr:
+    if sum(arr[:idx]) == sum(arr[idx+1:]):
+      return idx
+    idx += 1
+  return -1
+
+#
+# second solution
+#
 def find_even_index(arr):
   for x in range(len(arr)):
     if sum(arr[:x]) == sum(arr[x+1:]):
