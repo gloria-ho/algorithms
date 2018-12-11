@@ -24,19 +24,20 @@
 # check if first and last letter are equal
 # if true, run the same function recursively on the substring of the second letter to the second to last letter
 #
-def is_palindrome(str)
-  if str.length <= 1
-    return true
-  elsif str[0] == str[-1]
-    is_palindrome(str[1..-2])
-  end
-  false
-end
-
-
 # def is_palindrome(str)
-#   str == str.reverse
+#   if str.length <= 1
+#     return true
+#   elsif str[0] == str[-1]
+#     is_palindrome(str[1..-2])
+#   else
+#     false
+#   end
 # end
+
+
+def is_palindrome(str)
+  str == str.reverse
+end
 
 p is_palindrome('racecar') # true
 p is_palindrome('platypus') # false
