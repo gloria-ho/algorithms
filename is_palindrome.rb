@@ -34,7 +34,8 @@
 #   end
 # end
 
-
+# third attempt
+# using the build in reverse method, check string against the reversed string
 def is_palindrome(str)
   str == str.reverse
 end
