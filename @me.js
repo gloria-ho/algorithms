@@ -1,5 +1,4 @@
 //@Me
-
 // Given an array of twitter handles, print a string that @s all the users.
 
 // ex: ['Vestwell', 'GirlDevelopIt'] -> '@Vestwell @GirlDevelopIt'
