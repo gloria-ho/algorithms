@@ -3,7 +3,7 @@
 
 //  Ex: [1, 2, 3] => [6, 3, 2] 
 
-const allExceptI = (arr) => {
+function allExceptI(arr) {
   let result = []
   for (let i = 0; i < arr.length; i++) {
     let product = 1;
