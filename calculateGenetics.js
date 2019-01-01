@@ -86,7 +86,7 @@ const people = {
   }
 }
 
-const calculateGenetics = (parents, traits) => {
+function calculateGenetics(parents, traits) {
   let parent1 = parents[0];
   let parent2 = parents[1];
   let trait1Type = traits[0].includes('Hair') ? 'hair' : 'eyes';
