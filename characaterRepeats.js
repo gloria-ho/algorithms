@@ -1,7 +1,7 @@
 // Character Repeats
 // Write a function that takes in two parameters: a paragraph of text and a letter, and returns the number of times that letter appears in the paragraph.
 
-const characterRepeats = (paragraph, letter) => {
+function characterRepeats(paragraph, letter) {
   let target = new RegExp(letter,'g');
   return (paragraph.match(target) || []).length;
 }
