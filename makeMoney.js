@@ -3,7 +3,7 @@
 
 // [22, 6, 5, 8, 11, 10] -> 6 (since highest profit is from 11 - 5)
 
-const makeMoney = (stock) => {
+function makeMoney(stock) {
 
   // check if stock array length is at least 2
   if (stock.length < 2) {
