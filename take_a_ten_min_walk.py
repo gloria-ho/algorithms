@@ -10,5 +10,5 @@ def isValidWalk(walk):
    count = Counter(walk)
    return len(walk) == 10 and count['s'] == count['n'] and count['w'] == count['e']
 
-print(isValidWalk(['n', 'e', 's', 'w']))
-print(isValidWalk(['n', 'e', 'w', 'w', 's', 'e', 'n', 'e', 's', 'w']))
+print(isValidWalk(['n', 'e', 's', 'w'])) # false
+print(isValidWalk(['n', 'e', 'w', 'w', 's', 'e', 'n', 'e', 's', 'w'])) #true
