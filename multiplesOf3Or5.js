@@ -9,7 +9,7 @@
 // Courtesy of ProjectEuler.net
 
 function solution(number){
-  result = []
+  let result = [];
   for (let i = 1; i < number; i++) {
     if (i % 3 == 0 || i % 5 == 0) {
       result.push(i);
@@ -18,4 +18,15 @@ function solution(number){
   return result.reduce((a,b) => a + b, 0);
 }
 
-console.log(solution(10));
+// tweaked syntax
+
+const solution = (number) => {
+  let result = [];
+  let arr = [...Array(number).keys()];
+  for (let each of arr) {
+    each % 3 === 0 || each % 5 === 0 ? result.push(each) : false;
+  }
+  return result.reduce((a,b) => a + b, 0)
+}
+
+console.log(solution(10)); // 23
