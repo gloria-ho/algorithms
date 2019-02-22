@@ -35,6 +35,17 @@ function spinWords(sentence) {
 //   return result.join(' ');
 // }
 
+// second attempt
+const spinWords = (sentence) => {
+  let arr =  sentence.split(' ');
+  let result = []
+  for (let word of arr) {
+    word.length >= 5 ? result.push(word.split('').reverse().join('')) : result.push(word)
+  }
+  return result.join(' ');
+}
+
+
 console.log(spinWords("Hey fellow warriors")); // "Hey wollef sroirraw" 
 console.log(spinWords("This is a test")); // "This is a test" 
 console.log(spinWords("This is another test")); // "This is rehtona test"
