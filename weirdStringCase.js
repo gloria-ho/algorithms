@@ -25,3 +25,20 @@ function toWeirdCase(string){
   }  
   return result.join(" ");    
 }
+
+// tweaked syntax
+const toWeirdCase = (string) => {
+  let result = []
+  let words = string.split(' ');
+  for (let word of words) {
+    let current = ''
+    for (let index in word) {
+      (parseInt(index)) % 2 === 0 ? current += word[index].toUpperCase() : current += word[index].toLowerCase() 
+    }
+    result.push(current);
+  }
+  return result.join(' ');
+}
+
+console.log(toWeirdCase( "String" ));//=> returns "StRiNg"
+console.log(toWeirdCase( "Weird string case" ));//=> returns "WeIrD StRiNg CaSe"
