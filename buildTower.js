@@ -32,14 +32,6 @@
 //   '***********'
 // ]
 
-// def tower_builder(n_floors):
-//   tower = []
-//   for x in range(1, n_floors + 1 ):
-//     stars = (x * 2 -1) * '*'
-//     side = int((((n_floors * 2) -1) - ((x * 2) - 1)) / 2) * ' '
-//     tower.append(side + stars + side)
-//   return tower
-
 function towerBuilder(nFloors) {
   let tower = [];
   for (let i = 1; i < nFloors + 1 ; i++) {
