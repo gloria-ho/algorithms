@@ -20,11 +20,11 @@ int main() {
 
     for (i = 0; i < 2; i++) {
         average = 0;
-        for (j = 0; j < 2; j++) {
+        for (j = 0; j < 5; j++) {
             average += grades[i][j];
         }
 
-        printf("The average marks obtained in subject %d is: %.2f\n", i, average);
+        printf("The average marks obtained in subject %d is: %.2f\n", i, average/5);
     }
 
     return 0;
