@@ -57,6 +57,6 @@ int main()
     scanf("%c%*c", &ch);
     scanf("%s%*c", &s);
     scanf("%[^\n]%*c", &sen);
-    printf("%c\n%s\n%s",ch,s,sen);   
+    printf("%c\n%s\n%s",ch , s, sen);   
     return 0;
 }
